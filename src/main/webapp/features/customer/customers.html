@@ -1,0 +1,30 @@
+<div ng-controller='CustomersController as customersCtrl'>
+<br/>
+<br/>
+<input type="button" value="LoadData" ng-click="customersCtrl.loaddata()" class="btn btn-info dropdown-toggle"/>
+<br/>
+<br/>
+message: {{customersCtrl.message}}
+<br/>
+<br/>
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<td>Code Customer</td>
+			<td>Name Customer</td>
+			<td>Address Customer</td>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="c in customersCtrl.customers | limitTo: 5">
+			<td>{{c.codeCustomer}}</td>
+			<td>{{c.nameCustomer}}</td>
+			<td>{{c.addressCustomer}}</td>
+			
+		</tr>
+	</tbody>
+</table>
+<br/>
+
+</div>

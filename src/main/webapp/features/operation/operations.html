@@ -1,0 +1,29 @@
+<div ng-controller='OperationsController as operationsCtrl'>
+<br/>
+<br/>
+<input type="button" value="LoadData" ng-click="operationsCtrl.loaddata()" class="btn btn-info dropdown-toggle"/>
+<br/>
+<br/>
+<!--{{operationsCtrl.operations | limitTo: 5 | json }}-->
+<br/>
+
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<td>Number Operation</td>
+			<td>Operation Type</td>
+			<td>Operation Date</td>
+			<td>Amount</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="o in operationsCtrl.operations | limitTo: 5">
+			<td>{{o.numberOperation}}</td>
+			<td>{{o.operationType}}</td>
+			<td>{{o.dateOperation}}</td>
+			<td>{{o.amount}}</td>
+		</tr>
+	</tbody>
+</table>
+<br/>
+</div>

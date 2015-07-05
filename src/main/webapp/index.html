@@ -1,0 +1,38 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<body ng-app="bankingApp">
+<h1>Banking</h1>
+<br/>
+<ul class="nav nav-tabs">
+  <li role="presentation"><a href="#/Operations">Operations</a></li>
+  <li role="presentation"><a href="#/NouvelleOperation">Nouvelle Operation</a></li>
+  <li role="presentation"><a href="#/Customers">Customers</a></li>
+  <li role="presentation"><a href="#/Accounts">Accounts</a></li>
+  <li role="presentation"><a href="#/login">Login</a></li>
+  
+</ul>
+
+<div class="container">
+	<div ng-view=""></div>
+</div>
+
+<script src="js/libs/jquery-1.11.2.js"></script>
+<script src="js/libs/angular.js"></script>
+<script src="js/libs/angular-route.js"></script>
+
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/app/application.js"></script>
+
+
+<script src="features/account/accounts-controller.js"></script>
+<script src="features/account/accounts-service.js"></script>
+<script src="features/customer/customers-controller.js"></script>
+<script src="features/customer/customers-service.js"></script>
+<script src="features/operation/operations-controller.js"></script>
+</body>
+</html>

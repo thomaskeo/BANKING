@@ -1,0 +1,45 @@
+<div ng-controller='NouvelleOperationsController as newOperationsCtrl'>
+    </br>
+    <h1>Opérations</h1>
+    </br>
+    
+    <label for='typeT'>Type de la transaction:</label>
+    
+    </br>
+    
+    <select  name='typeT' id='typeT'>
+        <option>DEPOSIT</option>
+        <option>WITHDRAW</option>
+        <option>TRANSFER</option>
+    </select>
+    
+    </br>
+    </br>
+    
+    <label for='amount'>Montant</label>
+    
+    </br>
+    
+    <input type="text" id="amount" name="amount" required>
+    
+    </br>
+    </br>
+
+    <label for='transferCustomerId'>Numéro de compte</label>
+    
+    </br>
+    </br>
+
+    <select name='transferCustomerId'>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    
+    </br>
+    </br>
+
+    <button type='submit' class='btn btn-success'>Enregistrer</button>
+    
+
+</div>
